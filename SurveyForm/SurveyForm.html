@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <h1 id="title">Web Programming Knowledge</h1>
+    <p id="description">This survey is for students at Umwelt-Campus Birkenfeld
+        who are just starting to participate in web programming</p>
+    <form id="survey-form">
+        <label id="name-label">
+            Name
+            <input id="name" type="text" placeholder="Enter your name" required>
+        </label>
+        <label id="email-label">
+            Email
+            <input id="email" type="email" placeholder="Enter your email" required>
+        </label>
+        <label id="number-label">
+            Student number (optional)
+            <input id="number" type="number" min="6" max="120" placeholder="ID number">
+        </label>
+
+        <label>
+            What field of study are you specializing in?
+            <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Media Informatics</option>
+                <option value="2">Applied Computer Science</option>
+                <option value="3">Applied Computer Science and Artificial Intelligence</option>
+                <option value="4">Environmental Informatics and Business Information Systems</option>
+            </select>
+        </label>
+
+        <label>
+            "What degree are you currently pursuing at the university?"
+            <input id="bachelor" name="degree" type="radio" value="bachelor" checked> Bachelor's Degree
+            <input id="master" name="degree" type="radio" value="master"> Master's Degree
+            <input id="doctor" name="degree" type="radio" value="doctor"> Doctorate (Ph.D.):
+        </label>
+
+        <label>
+            What fundamental information is already within your knowledge?
+            (Check all that apply)
+            <input id="html" type="checkbox" value="html"> HTML
+            <input id="css" type="checkbox" value="css"> CSS
+            <input id="js" type="checkbox" value="js"> JavaScript
+            <input id="php" type="checkbox" value="php"> PHP
+            <input id="another" type="checkbox" value="another"> Another
+        </label>
+
+        <label>
+            Do you have any feedback or recommendations?
+            <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Enter your feedback here..."></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
