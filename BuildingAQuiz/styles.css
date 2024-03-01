@@ -1,0 +1,176 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    background: whitesmoke;
+    color: rgb(12, 12, 137);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(6, 57, 17);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+#logo{
+    width: max(57px, 4vw);
+    background-color: rgb(15, 75, 37);
+    aspect-ratio: 21/8;
+    padding: 0.8rem;
+}
+
+h1 {
+    color: orangered;
+    font-size: min(5.6vw, 1.8em);
+    text-align: center;
+}
+
+nav {
+    width: 40%;
+    max-width: 400px;
+    height: 52px;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav > ul > li {
+    color: wheat;
+    margin: 0 0.2rem;
+    padding: 0.3rem;
+    display: block;
+}
+
+nav > ul > li:hover {
+    background-color: rgb(249, 218, 171);
+    color: rgb(17, 147, 172);
+    cursor: pointer;
+}
+
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 60px;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto 15px;
+    max-width: 750px;
+}
+
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    border-bottom: 6px groove rgb(221, 240, 219);
+    margin-top: 19px;
+    padding-top: 34px;
+}
+
+.info {
+    padding: 15px 0 0 10px;
+}
+
+.formrow {
+    margin-top: 35px;
+    padding: 0 20px;
+}
+
+.info input {
+    width: 50%;
+    text-align: left;
+}
+
+.info label {
+    width: 60%;
+    min-width: 75px;
+    text-align: right;
+}
+
+.question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+p {
+    margin-top: -13px;
+    padding-left: 14px;
+    font-size: 20px;
+}
+
+p::before {
+    content: "Question #";
+}
+
+.question {
+    border: none;
+    padding-bottom: 0;
+}
+
+.answer-list {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    display: block;
+    margin: 45px auto;
+    width: 27%;
+    padding: 13px;
+    font-size: 18px;
+    background: rgb(199, 228, 218);
+    border: 2px dotted rgb(188, 138, 13);
+    color: rgb(118, 108, 24);
+}
+
+footer {
+    background-color: rgb(117, 78, 19);
+    display: flex;
+    justify-content: center;
+}
+
+footer, foooter a{
+    color: wheat;
+}
+
+address {
+    text-align: center;
+    padding: 0.4em;
+}
+
+.sr-only {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    margin: 26px 0px;
+    /*overflow: hidden;
+    clip: rect(0, 0, 0, 0);*/
+    white-space: nowrap;
+    border: 0;
+}
