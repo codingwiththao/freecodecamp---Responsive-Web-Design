@@ -1,0 +1,152 @@
+span[class~="sr-only"] {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    width: 1px !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    margin: -1px !important;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: rgb(3, 3, 91);
+}
+
+h1 {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.75rem;
+}
+
+h1 .flex {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.2rem;
+}
+
+h1 .flex span:first-of-type {
+    font-size: 0.9rem; 
+}
+
+h1 .flex:last-of-type{
+    font-size: 1.7rem;
+}
+
+section {
+    max-width: 45rem;
+    margin: 0 auto;
+    border: 3px solid rgb(14, 114, 139);
+}
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background: rgb(63, 79, 35);
+    color: azure;
+    padding: 0.2rem calc(1.0rem + 0.3px) 0.2rem 0;
+    margin: 0 -2px;
+}
+
+#years span[class] {
+    font-weight: bold;
+    width: 3.4rem;
+    text-align: center;
+}
+
+.table-wrap {
+    padding: 0 0.9rem 1.8rem 0.9rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+table caption {
+    color: rgb(16, 160, 160);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: -2.1rem;
+    left: 0.8rem;
+}
+
+tbody td {
+    width: 90vw;
+    max-width: 4.5rem;
+    min-width: 4.5rem;
+}
+
+tbody th {
+    width: calc(100% - 10rem);
+}
+
+tr[class="total"]{
+    border-bottom: 5px double rgb(182, 197, 188);
+    font-weight: bold;
+}
+
+tr[class="total"] th {
+    text-align: left;
+    padding: 1rem 0 0.7rem 0.3rem;
+}
+
+tr.total td {
+    text-align: right;
+    padding: 0 0.3rem;
+}
+
+tr.total td:nth-of-type(3) {
+    padding-right: 0.2rem;
+}
+
+tr.total:hover {
+    background-color: rgb(187, 234, 218);
+}
+
+td.current {
+    font-style: italic;
+}
+
+tr.data {
+    background-image: linear-gradient(to bottom, #ebf5e4 1.9rem, white 1.9rem);
+}
+
+tr.data th {
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-left: 0.7rem;
+}
+
+tr.data th .description {
+    display: block;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.85rem;
+    padding: 1.1rem 0 0.85rem;
+    margin-right: -10.5rem;
+}
+
+tr.data td {
+    vertical-align: top;
+    padding: 0.4rem 0.25rem 0;
+    text-align: right;
+}
+
+tr.data td:last-of-type {
+    padding-right: 0.6rem;
+}
