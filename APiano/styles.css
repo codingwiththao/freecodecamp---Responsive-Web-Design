@@ -1,0 +1,75 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+#piano {
+    background-color: darkcyan;
+    width: 999px;
+    height: 299px;
+    margin: 89px auto;
+    padding: 89px 19px 0 19px;
+    border-radius: 9px;
+    position: relative;
+}
+
+.keys {
+    background-color: black;
+    width: 949px;
+    height: 189px;
+    padding-left: 3px;
+    overflow: hidden;
+}
+
+.key {
+    background-color: whitesmoke;
+    position: relative;
+    width: 49px;
+    height: 179px;
+    margin: 3px;
+    float: left;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.key.black--key::after {
+    background-color: black;
+    content: "";
+    position: absolute;
+    left: -19px;
+    width: 39px;
+    height: 99px;
+    border-radius: 0 0 4px 4px ;
+}
+
+.logo {
+    width: 209px;
+    position: absolute;
+    top: 29px;
+}
+
+@media (max-width: 769px) {
+    #piano {
+        width: 359px;
+    }
+
+    .keys {
+        width: 319px;
+    }
+
+    .logo {
+        width: 159px;
+    }
+}
+
+@media (max-width: 1299px) and (min-width: 769px) {
+    #piano {
+        width: 679px;
+    }
+
+    .keys {
+        width: 639px;
+    }
+}
