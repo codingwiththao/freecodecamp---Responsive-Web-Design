@@ -1,0 +1,53 @@
+@media screen and (max-width: 2000px) {
+    body {
+        display: flex;
+    }
+    
+    header {
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    li {
+        font-size: 15px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    code {
+        background-color: rgb(241, 245, 246);
+    } 
+
+    main {
+        flex-direction: right;
+    }
+    .main-section {
+        padding: 10px;
+    }
+
+    #navbar {
+        
+        padding: 5px;
+        flex-direction: left; 
+        width: 1750px;
+        border-right: 1px solid darkgrey;
+    }
+
+    .nav-link {
+        display: block;
+        margin: 20px 2px;
+        padding: 1rem;
+        text-decoration: none;
+        border-bottom: 1px solid darkgrey;
+        color: rgb(117, 126, 136);
+    }
+
+
+}

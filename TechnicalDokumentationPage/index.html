@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document from PHP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>PHP Document</header>
+        <a class="nav-link" href="#About_PHP">About PHP</a>
+        <a class="nav-link" href="#Necessary_Requirements">Necessary Requirements</a>
+        <a class="nav-link" href="#PHP_and_Java">PHP and Java</a>
+        <a class="nav-link" href="#Hello_World">Hello World</a>
+        <a class="nav-link" href="#Variables">Variables</a>
+        <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+        <a class="nav-link" href="#Variable_scope">Variable scope</a>
+        <a class="nav-link" href="#Constants">Constants</a>
+        <a class="nav-link" href="#Data_types">Data types</a>
+        <a class="nav-link" href="#if_else_statement">if else statement</a>
+        <a class="nav-link" href="#while_statement">while statement</a>
+        <a class="nav-link" href="#Function_declarations">Function declarations</a>
+        <a class="nav-link" href="#Reference">Reference</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="About_PHP">
+            <header>About PHP</header>
+            <p>
+                PHP, which stands for Hypertext Preprocessor, 
+                is a widely-used open-source scripting language 
+                that is especially suited for web development. 
+                Created by Rasmus Lerdorf in 1994, 
+                PHP originally stood for "Personal Home Page.
+                " Over the years, it has evolved into a powerful server-side scripting language 
+                and is now referred to as a recursive acronym, 
+                where PHP stands for "PHP: Hypertext Preprocessor."
+            </p>
+        </section>
+
+        <section class="main-section" id="Necessary_Requirements">
+            <header>Necessary Requirements</header>
+            <p>
+                In the context of web design, 
+                the prerequisites you should already have in place may include:
+            </p>
+            <ol>
+                <li>A fundamental understanding of HTML (Hypertext Markup Language) and 
+                    CSS (Cascading Style Sheets) is essential for 
+                    building the structure and styling of web pages.</li>
+                <li>While not mandatory, knowing the basics of JavaScript can enhance 
+                    your ability to create dynamic and interactive elements on web pages.</li>
+                <li>Knowing how different web browsers interpret and display websites 
+                    can help ensure compatibility and a consistent user experience.</li>
+                <li>Familiarity with web development tools and software, 
+                    such as code editors (e.g., Visual Studio Code), version control systems (e.g., Git), 
+                    and browser developer tools, can streamline your workflow.</li>
+            </ol>
+        </section>
+
+        <section class="main-section" id="PHP_and_Java">
+            <header>PHP and Java</header>
+            <p>
+                PHP is a server-side scripting language primarily used for web development. 
+                It is embedded in HTML and executes on the server, 
+                generating dynamic web pages and applications. 
+                PHP has a relatively low learning curve, making it accessible for beginners. 
+                It excels in web development and has a large and active community, 
+                with frameworks like Laravel and Symfony providing structure and support.
+            </p>
+            <p>
+                Java, on the other hand, is a versatile, compiled, and object-oriented programming language. 
+                It finds applications in a wide range of scenarios, including web development (JavaServer Pages), mobile apps (Android), and enterprise-level systems. 
+                Java code is compiled to bytecode, which runs on the Java Virtual Machine (JVM), enabling platform independence. 
+                While Java has a steeper learning curve, it is known for high performance, especially in large-scale enterprise applications. 
+                Frameworks like Spring and JavaServer Faces (JSF) contribute to its robust ecosystem.
+            </p>
+        </section>
+
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <code>
+                &lt;?php echo "Hello, World!"; ?&gt;
+            </code>
+            <p>
+                This PHP script uses the echo statement to output the text &quot;Hello, World!&quot; to the browser. 
+                The &lt;?php and ?&gt; tags denote the beginning and end of the PHP code block.
+            </p>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>
+                In PHP, variables are used to store and manipulate data. 
+                Variable names in PHP are case-sensitive and must start with a dollar sign (&dollar;). 
+            </p>
+        </section>
+
+        <section class="main-section" id="Declaring_variables">
+            <header>Declaring variables</header>
+            <p>
+                To declare a variable, you use the following syntax:
+            </p>
+            <code>
+                &dollar;variableName = value;
+            </code>
+            <p>
+                For examples:
+            </p>
+            <code>
+                &dollar;name = "John";
+                &dollar;age = 25;
+                &dollar;isStudent = true;
+            </code>
+        </section>
+
+        <section class="main-section" id="Variable_scope">
+            <header>Variable scope</header>
+            <p>
+                Variables can have different scopes, including global and local. 
+                A variable declared outside a function or a code block has global scope, 
+                while a variable declared inside a function has local scope.
+            </p>
+            <code>
+                &dollar;globalVar = &quot;I'm global&quot;;
+            </code>
+            <code>
+                function exampleFunction() &lbrace; </br>
+                    &dollar;localVar = &quot;I'm local&quot;; </br>
+                    echo &dollar;localVar; </br>
+                &rbrace;
+            </code>
+        </section>
+
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <p>
+                To define a constant, you use the define() function. 
+                Constants are case-sensitive by default, 
+                and it's a common convention to name them in uppercase.
+            </p>
+            <code>
+                define("CONSTANT_NAME", "constant_value");
+            </code>
+            <p>
+                For examples:
+            </p>
+            <code>
+                define("PI", 3.14159); </br>
+                define("SITE_NAME", "My Website");
+            </code>
+            <p>
+                Once a constant is defined, 
+                you can access its value using the constant name without the dollar sign (&dollar;).
+            </p>
+            <p>
+                For examples:
+            </p>
+            <code>
+                echo PI; </br>
+                echo SITE_NAME; 
+            </code>
+        </section>
+
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+            <p>PHP supports various data types, including:</p> 
+            <ul>
+                <li><span class="bold">Integer:</span> Whole numbers without decimal points.</li>
+                <li><span class="bold">Float (or Double):</span> Numbers with decimal points.</li>
+                <li><span class="bold">String:</span> Sequence of characters.</li>
+                <li><span class="bold">Boolean:</span> Represents either true or false.</li>
+                <li><span class="bold">Array:</span> Ordered map that holds values.</li>
+                <li><span class="bold">Object:</span> Instances of user-defined classes.</li>
+                <li><span class="bold">NULL:</span> Represents a variable with no value.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="if_else_statement">
+            <header>if else statement</header>
+            <p>
+                In PHP, the if...else statement allows you to execute different blocks 
+                of code based on a condition. Here's the basic syntax:
+            </p>
+            <code>
+                if (condition) &lbrace; </br>
+                    <i>// Code to be executed if the condition is true</i> </br>
+                &rbrace; else &lbrace; </br>
+                    <i>// Code to be executed if the condition is false</i> </br>
+                &rbrace; </br>            
+            </code>
+            <p>
+                Here's an example:
+            </p>
+            <code>
+                &dollar;age = 25;
+
+                if (&dollar;age &ge; 18) &lbrace; </br>
+                    echo "You are eligible to vote."; </br>
+                &rbrace; else &lbrace; </br>
+                    echo "You are not eligible to vote."; </br>
+                &rbrace; </br>
+            </code>
+        </section>
+
+        <section class="main-section" id="while_statement">
+            <header>while statement</header>
+            <p>
+                In PHP, the while statement is used to execute a block of code repeatedly 
+                as long as a specified condition evaluates to true. 
+                The basic syntax is as follows:
+            </p>
+            <code>
+                while (condition) &lbrace; </br>
+                    <i>// Code to be executed as long as the condition is true</i> </br>
+                &rbrace; </br>                
+            </code>
+            <p>Here's a simple example of a while loop that counts from 1 to 5: </p>
+            <code>
+                &dollar;count = 1;
+
+                while (&dollar;count &le; 5) &lbrace; </br>
+                    echo &dollar;count . " "; </br>
+                    &dollar;count&plus;&plus;; </br>
+                &rbrace; </br>
+            </code>
+        </section>
+
+        <section class="main-section" id="Function_declarations">
+            <header>Function declarations</header>
+            <p>
+                Function declarations allow you to define a reusable block of code that can be called or invoked multiple times throughout your script. 
+                Here's the basic syntax for function declarations:
+            </p>
+            <code>
+                function functionName(parameters) &lbrace; </br>
+                    <i>// Code to be executed</i> </br>
+                    return result; </br>
+                &rbrace; </br>                
+            </code>
+            <p>Here's an example of a simple function that adds two numbers: </p>
+            <code>
+                function addNumbers(&dollar;num1, &dollar;num2) &lbrace; </br>
+                    &dollar;sum = &dollar;num1 &plus; &dollar;num2; </br>
+                    return &dollar;sum; </br>
+                &rbrace; </br>                 
+            </code>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <ul>
+                <li>All the documentation in this page is taken from 
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/PHP?retiredLocale=de" target="_blank">MDN</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
