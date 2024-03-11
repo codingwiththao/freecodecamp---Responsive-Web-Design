@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 5rem auto;
+}
+
+#header {
+  background-color: #f1f1f1;
+  padding: 0.4rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo h2 {
+  margin: auto 10px;
+  font-family: "Cambria", sans-serif;
+  font-weight: normal;
+}
+
+#header-img {
+  width: 32px;
+}
+
+#nav-bar > ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+li .nav-link {
+  text-decoration: none;
+  margin: auto 27px;
+  font-size: 17px;
+  color: rgb(65, 65, 65);
+}
+
+.nav-link:hover {
+  color: darkred;
+}
+
+#form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 4.5rem auto;
+}
+
+#form > h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px;
+}
+
+#form > #email {
+  width: 19rem;
+  padding: 6px;
+  margin: 0 auto 17px;
+}
+
+#form > #submit {
+  width: 8rem;
+  height: 29px;
+  padding: 3px 9px;
+  margin: 0 auto;
+  color: black;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+#form > #submit:hover {
+  background-color: antiquewhite;
+  color: darkgoldenrod;
+}
+
+#features {
+  margin-bottom: 3.4rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.subtitle {
+  margin-bottom: 2.3rem;
+}
+
+i {
+  float: left;
+  margin: 25px;
+  font-size: 3rem;
+  color: #d6b017;
+}
+
+#features h3 {
+  font-size: 1.3rem;
+}
+
+
+#features .info {
+  margin-top: -20px;
+}
+
+#benefits {
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  background-color: #f8f8f8;
+  margin: 0 auto 2.7rem;
+}
+
+#video {
+  width: 80%;
+  max-width: 800px; /* Set a maximum width for the video */
+  height: 15rem;
+}
+
+#pricing .euro {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  text-align: center;
+}
+
+#pricing .euro li {
+  border: 1px ridge rgb(179, 103, 10);
+  padding:  0 1.3rem 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Căn giữa các cột trên cùng một hàng */
+  gap: 1px;
+}
+
+#pricing .euro li .sort {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  width: 100%;
+  background: linear-gradient(azure 20%, orange 90%);
+}
+
+#pricing .euro li .price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: -5px;
+}
+
+#pricing .euro li .description {
+  margin-bottom: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.7rem;
+}
+
+#pricing .euro li button {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(248, 206, 0);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+#pricing .euro li button:hover {
+  color: rgb(224, 147, 3);
+  background-color: beige;
+}
+
+footer {
+  margin: 29px auto -30px;
+  background-color: rgb(226, 227, 211);
+  display: block;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 7px;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: black;
+  transition: 0.4s all;
+}
+
+footer ul li a:hover {
+  color: rgb(165, 120, 42);
+}
+
+@media on screen and (max-width:720px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  /* Additional styles for smaller screens */
+  #nav-bar ul {
+    /* Example: Adjust styling for the navigation menu on smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text */
+  }
+}
