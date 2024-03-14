@@ -1,0 +1,244 @@
+*, *::before ,*::after {
+    box-sizing: inherit ;
+    /*Áp dụng cho tất cả các pseudo-element trước + sau mỗi phần tử.*/
+    /*Giá trị inherit sẽ kế thừa giá trị box-sizing từ phần tử cha trực tiếp của nó.*/
+}
+
+:root {
+    --main-white: whitesmoke;
+    --main-black: #252525;
+    --main-red: rgb(135, 7, 7);
+    --main-blue: rgb(32, 99, 176);
+    --main-gray: #5e6349;
+    --main-green: lightgreen;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--main-red);
+    box-shadow: 2px 2px 10px var(--main-gray);
+    z-index: 100;
+}
+
+#navbar .nav-list {
+    display: flex;
+    margin-bottom: 1.3rem;
+    margin-right: 0.4rem;
+}
+
+#navbar .nav-list > li {
+    list-style-type: none;
+    padding-right: 1.5rem;
+}
+
+#navbar .nav-list > li a {
+    font-size: 1.2em;
+    font-family: Geneva, Verdana, sans-serif;
+    color: var(--main-white);
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#navbar .nav-list > li a:hover {
+    background-color: var(--main-blue);
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 97vh;
+
+    font-family: "Tahoma", sans-serif;
+    background-color: var(--main-black);
+    background-image: linear-gradient(
+        57deg,
+        var(--main-black) 30%,
+        var(--main-gray) 90%
+    );
+}
+
+#welcome-section > h1 {
+    font-size: 2.7rem;
+    color: var(--main-white);
+    margin-bottom: -5px;
+}
+
+#welcome-section > p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--main-red);
+}
+
+#projects {
+    text-align: center;
+    padding: 4.5rem 1.5rem;
+    background-color: var(--main-blue);
+    background-image: linear-gradient(
+        270deg,
+        var(--main-blue) 30%,
+        var(--main-green) 100%
+    );
+}
+
+.projects-header {
+    display: inline-block;
+    color: var(--main-white);
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    margin: 0 auto 40px;
+    padding: 5px;
+    border-bottom: 0.2rem double var(--main-white);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    grid-gap: 2.9rem;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto 5.5rem;
+}
+
+.project {
+    background-color: var(--main-gray);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.project-image {
+    height: calc(100% - 4.5rem); /* 100% chiều cao của phần tử mẹ trừ đi 4.5 rem*/
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    display: block;
+}
+
+.project-tile {
+    text-decoration: none;
+    color: var(--main-white);
+    font-family: "Poppins", sans-serif;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    padding: auto 0.5rem;
+    transition: color 0.3s ease-out;
+}
+
+.project-title .code {  
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+}
+
+.project-title:hover, .project-title .code:hover {
+    color: orangered;
+}
+
+.btn-show-all {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-white);
+    background-color: var(--main-gray);
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.btn-show-all:hover {
+    background-color: var(--main-red);
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    width: 100%;
+    height: 50vh;
+    padding: 3.5rem 0;
+    background-color: var(--main-gray);
+
+    color: var(--main-white);
+    font-family: 'Gill Sans', sans-serif;
+    text-align: center;
+}
+
+.contact-header > h2 {
+    font-size: 3.4rem;
+    margin-bottom: -0.6rem;
+}
+
+.contact-header > p {
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 2.3rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 3rem;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.4rem 2rem;
+}
+
+.contact-details {
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 1px var(--main-red);
+    transition: transform 0.9s ease;
+}
+
+.contact-details:hover {
+    transform: translate(0, 1.3rem);
+    /*scale, rotate, skew, translate*/
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background: var(--main-gray);
+    border-top: 5px groove var(--main-red);
+    color: var(--main-white);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    font-style:oblique;
+}
+
+@media (max-width: 768px) {
+    #projects {
+        background-image: linear-gradient(
+            270deg,
+            orangered 50%,
+            pink 100%,
+        );
+    }
+}
